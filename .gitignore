@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+*.db
+*.log
+
+# Node
+web/node_modules/
+web/.next/
+web/out/
+web/build/
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+.gemini/
+*.swp
+*.swo
+
+# Project Assets (Ignore binary backups but keep README visuals)
+# !README_visuals/
