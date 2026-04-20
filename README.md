@@ -12,7 +12,7 @@
 
 ---
 
-### 🧠 Architectural Excellence (5-Minute Engineers' Deep Dive)
+### 🧠 Architectural Excellence
 
 Nexus is built on a **Hierarchical Agentic Orchestratio**n model. Instead of single-shot prompts, it maintains a persistent **State Ledger** representing an entire company's goals, tasks, and budgets.
 
