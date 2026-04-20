@@ -1,96 +1,66 @@
-# 🌌 Nexus AI Orchestrator
+# Nexus AI Orchestrator 👑
 
-**Enterprise-grade AI Orchestrator with Neural Memory clusters, Distributed DAG workflows, and a Liquid Intelligence UI.**
-
-[![Python](https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python)](https://www.python.org/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-Framework-green?style=for-the-badge&logo=fastapi)](https://fastapi.tiangolo.com/)
-[![Redis](https://img.shields.io/badge/Redis-Memory_Cluster-red?style=for-the-badge&logo=redis)](https://redis.io/)
-[![Docker](https://img.shields.io/badge/Docker-Production_Ready-blue?style=for-the-badge&logo=docker)](https://www.docker.com/)
+**The enterprise-grade control plane for autonomous AI agent ecosystems.**
 
 ---
 
-## 🚀 The Vision
-Nexus is not just a job runner; it is a **brain for distributed systems**. Designed to operate in hardware-constrained environments, Nexus utilizes specialized **Neural Memory clusters** and **Liquid Intelligence** to coordinate complex tasks across multiple nodes with minimal overhead.
+### ⏱️ HR Scan (30-Second Summary)
 
-### Why Nexus?
-- **Deterministic Autonomy**: Move from simple scripts to robust, auditable AI workflows.
-- **Resource Optimized**: Specifically tuned for high performance on edge-devices and constrained servers.
-- **Enterprise Ready**: Ships with a comprehensive management UI, telemetry, and security protocols.
+*   **Problem:** Fragmented, non-deterministic management of multiple AI agents leads to operational chaos and "hallucination loops" in production.
+*   **The Value:** Nexus provides a **governed orchestration layer** that enables companies to deploy hierarchies of inter-communicating agents working toward massive objectives with human-in-the-loop oversight.
+*   **Business Impact:** Automates multi-step, multi-role technical workflows while enforcing strict budgetary and safety constraints.
 
 ---
 
-## 🧠 Core Architecture & Design
-Nexus operates on a **Directed Acyclic Graph (DAG)** orchestration model, allowing for non-linear task dependencies and parallel execution.
+### 🧠 Architectural Excellence (5-Minute Engineers' Deep Dive)
 
-### Component Topology
-- **The Core**: Python/FastAPI driven engine managing task states and node heartbeats.
-- **Neural Memory**: Distributed caching layer (Redis) for context-aware long-term retrieval.
-- **Liquid UI**: A high-speed, interactive interface for real-time workflow visualization.
+Nexus is built on a **Hierarchical Agentic Orchestratio**n model. Instead of single-shot prompts, it maintains a persistent **State Ledger** representing an entire company's goals, tasks, and budgets.
 
-```mermaid
-graph TD
-    A[Client Request] --> B[Nexus Core API]
-    B --> C{Orchestrator}
-    C --> D[Task Queue]
-    C --> E[Neural Memory Cluster]
-    D --> F[Node A]
-    D --> G[Node B]
-    F --> H[Result Aggregator]
-    G --> H
-    H --> B
-```
+#### Key Architectural Decisions & Tradeoffs:
+1.  **State-First Design:** Used PostgreSQL with Drizzle ORM to ensure every agent action is auditable and recoverable. *Tradeoff: Higher latency than in-memory stores, but required for enterprise-grade auditability.*
+2.  **Unopinionated Adapters:** Designed a plugin system for AI models (OpenAI, Anthropic, local Llama). *Decision: Avoided lock-in to provide maximum flexibility for high-security environments.*
+3.  **Governance Loops:** Implemented "Heartbeat Schedulers" that force agents to assess their environment and budgets *before* executing high-risk code.
+
+#### My Engineering Ownership:
+*   **Core Logic:** Designed and built the multi-agent task delegation engine.
+*   **Infrastructure:** Architected the monorepo structure (pnpm workspaces) for clean separation of concerns.
+*   **Security:** Engineered the human-in-the-loop approval gate logic for production pushes.
 
 ---
 
-## 🛠️ Feature Matrix
-- **Distributed DAG Execution**: complex dependency management made simple.
-- **Neural Memory**: Persistent AI context across sessions with sub-ms retrieval.
-- **Hardware Agnostic**: Optimized for ARM64 and x86_64 architectures.
-- **Dynamic Scaling**: Add or remove worker nodes without downtime.
-- **Secure by Design**: mTLS and JWT-based authentication for inter-node communication.
+### 🚀 Getting Started (Run Locally)
+
+1.  **Clone:** `git clone https://github.com/Sirius6907/nexus-ai-orchestrator.git`
+2.  **Install:** `pnpm install`
+3.  **Env:** Copy `.env.example` to `.env` and add your API keys.
+4.  **Run:** `pnpm dev`
 
 ---
 
-## 💻 Getting Started (Simulated Setup)
+### 🛠️ Tech Stack
 
-### 1. Prerequisites
-- Python 3.10+
-- Redis Server (local or cloud)
-- Docker (optional but recommended)
-
-### 2. Installation
-```bash
-git clone https://github.com/Sirius6907/nexus-ai-orchestrator.git
-cd nexus-ai-orchestrator
-pip install -r requirements.txt
-```
-
-### 3. Execution
-```bash
-python -m nexus.core --worker-mode
-```
+*   **Runtime:** Node.js (TypeScript)
+*   **Database:** PostgreSQL / PGLite (Local embedded mode)
+*   **Sync:** WebSockets for real-time dashboard updates
+*   **ORMs:** Drizzle ORM
+*   **Models:** Multi-adapter support (Claude-3.5-Sonnet, GPT-4o)
 
 ---
 
-## 🧪 Engineering Challenges Solved
-- **Race Conditions in Distributed Memory**: Implemented distributed locks via Redis to ensure state consistency.
-- **Memory Pressure**: Developed a proprietary "Least-Recently-Used" context eviction policy for the Neural Memory cluster.
-- **Network Latency**: Optimized gRPC protocols for inter-node task handoffs.
+### 🗺️ Roadmap & Production Readiness
+
+- [x] Hierarchical Task Delegation (MVP)
+- [x] Multi-Model Support
+- [/] Long-term RAG Agent Memory (In Progress)
+- [ ] Autonomous Self-Healing Infrastructure Loops (Future)
 
 ---
 
-## 📈 Roadmap
-- [ ] Multi-Modal Agent Adapters (Vision/Audio)
-- [ ] Kubernetes Operator for automated scaling
-- [ ] Advanced Graph Visualization in the Liquid UI
+### 🤝 Contributing & Support
+
+We follow conventional commits and strict architectural linting. See `CONTRIBUTING.md` for details.
 
 ---
 
-## 👔 Recruiter Bullet Points (For your Resume)
-- *Developed a distributed AI orchestration system (Nexus) capable of managing complex DAG workflows across multiple nodes.*
-- *Implemented a Neural Memory clustering system using Redis, reducing context retrieval latency by 40%.*
-- *Designed a high-throughput API with FastAPI, supporting concurrent task execution for autonomous agentic cycles.*
-
----
-
-*"Architecting the nerves of the next-generation autonomous enterprise."*
+### 📜 License
+MIT License. Created by [Sirius](https://github.com/Sirius6907).

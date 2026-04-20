@@ -1,21 +1,38 @@
-# Contributing to this Project
+# Contributing to Nexus AI Orchestrator
 
-First off, thank you for considering contributing! Projects like this thrive on community feedback and code contributions.
+First off, thank you for considering contributing to Nexus AI Orchestrator! It's people like you that make the open-source community such an amazing place to learn, inspire, and create.
 
-## 🚀 How to Contribute
+## Code of Conduct
 
-1.  **Fork the Project**: Click the 'Fork' button at the top right of this page.
-2.  **Clone your Fork**: `git clone https://github.com/Sirius6907/nexus-ai-orchestrator.git`.
-3.  **Create a Branch**: `git checkout -b feature/amazing-feature`.
-4.  **Make Changes**: Implement your feature or fix.
-5.  **Commit**: Use descriptive commit messages (e.g., `feat: add retry logic to DAG nodes`).
-6.  **Push**: `git push origin feature/amazing-feature`.
-7.  **Open a Pull Request**: Explain your changes and why they are valuable.
+By participating in this project, you are expected to uphold our Code of Conduct.
 
-## 🛠️ Code Standards
-- Follow the existing code style (Prettier/ESLint configs where present).
-- Ensure all new features are documented in the README.
-- Add comments to complex logic sections.
+## How Can I Contribute?
 
-## 🐛 Reporting Bugs
-Use the GitHub Issues tab to report bugs. Provide as much detail as possible, including steps to reproduce and environment details.
+### Reporting Bugs
+
+- Check the GitHub Issues tab first to see if the issue has already been reported.
+- If not, create a new issue. Please include as much detail as possible, including steps to reproduce the bug.
+
+### Suggesting Enhancements
+
+- Open a GitHub Issue with the tag `enhancement`.
+- Describe the feature you'd like to see and why it would be useful.
+
+### Pull Requests
+
+1. Fork the repo and create your branch from `main`.
+2. If you've added code that should be tested, add tests.
+3. If you've changed APIs, update the documentation.
+4. Ensure the test suite passes.
+5. Make sure your code lints.
+6. Issue that pull request!
+
+## Styleguide
+
+- We follow standard JavaScript/TypeScript practices.
+- Ensure consistent indentation (2 spaces).
+- Use descriptive variable and function names.
+
+## Questions?
+
+Feel free to open an issue or reach out via [LinkedIn](https://www.linkedin.com/).
