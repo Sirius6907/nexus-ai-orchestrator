@@ -4,7 +4,7 @@
 
 ---
 
-### ⏱️ HR Scan (30-Second Summary)
+### **Summary**
 
 *   **Problem:** Fragmented, non-deterministic management of multiple AI agents leads to operational chaos and "hallucination loops" in production.
 *   **The Value:** Nexus provides a **governed orchestration layer** that enables companies to deploy hierarchies of inter-communicating agents working toward massive objectives with human-in-the-loop oversight.
